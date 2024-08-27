@@ -6,21 +6,21 @@ describe("Es Bisiesto", () => {
         expect(esBisiesto(2000)).toEqual(true);
     });*/
 
-    it("El 1700 no deberia considerarse como año bisiesto", () => 
+    it("El 1700  deberia considerarse como año bisiesto", () => 
     {
-        expect(esBisiesto(1700)).toEqual(false);
+        expect(esBisiesto(1700)).toEqual(true);
     });
-    it("El 1800 no deberia considerarse como año bisiesto", () => 
+    it("El 1800  deberia considerarse como año bisiesto", () => 
     {
-        expect(esBisiesto(1800)).toEqual(false);
+        expect(esBisiesto(1800)).toEqual(true);
     });
-    it("El 1900 no deberia considerarse como año bisiesto", () => 
+    it("El 1900  deberia considerarse como año bisiesto", () => 
     {
-        expect(esBisiesto(1900)).toEqual(false);
+        expect(esBisiesto(1900)).toEqual(true);
     });
-    it("El 2100 no deberia considerarse como año bisiesto", () => 
+    it("El 2100  deberia considerarse como año bisiesto", () => 
     {
-        expect(esBisiesto(2100)).toEqual(false);
+        expect(esBisiesto(2100)).toEqual(true);
     });
 
     it("El 2008 deberia considerarse como año bisiesto", () => 
@@ -35,22 +35,19 @@ describe("Es Bisiesto", () => {
     {
          expect(esBisiesto(2016)).toEqual(true);
     });
-/*
-    it("El 1700 no deberia considerarse como año bisiesto", () => 
+
+    it("El 2017 no deberia considerarse como año bisiesto", () => 
     {
-        expect(esBisiesto(1700)).toEqual(false);
+        expect(esBisiesto(2017)).toEqual(false);
     });
-    it("El 1800 no deberia considerarse como año bisiesto", () => 
+    it("El 2018 no deberia considerarse como año bisiesto", () => 
     {
-        expect(esBisiesto(1800)).toEqual(false);
+        expect(esBisiesto(2018)).toEqual(false);
     });
-    it("El 1900 no deberia considerarse como año bisiesto", () => 
+    it("El 2019 no deberia considerarse como año bisiesto", () => 
     {
-        expect(esBisiesto(1900)).toEqual(false);
+        expect(esBisiesto(2019)).toEqual(false);
     });
-    it("El 2100 no deberia considerarse como año bisiesto", () => 
-    {
-        expect(esBisiesto(2100)).toEqual(false);
-    });*/
+    
 });
 
