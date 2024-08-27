@@ -1,7 +1,14 @@
-//import sumar from "./sumador.js";
+import esBisiesto from "./esBisiesto.js";
 
 describe("Es Bisiesto", () => {
-  it("", () => {
-    //expect(sumar(3, 2)).toEqual(5);
+  it("El 4 deberia considerarse como año bisiesto", () => 
+{
+    expect(esBisiesto(4)).toEqual(true);
+  });
+
+  it("El 5 no deberia considerarse como año bisiesto", () => 
+    {
+    expect(esBisiesto (5)).toEqual(false);
   });
 });
+
